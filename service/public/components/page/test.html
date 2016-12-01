@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		
+		<script src="http://localhost:3000/components/lib/sea.js"></script>
+		<script src="http://localhost:3000/components/lib/seajs-text.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/test.css"/>
+	</head>
+	<body>
+		<div class="demo">
+			<a class="qf-button" id="showmodel">Click me</a>
+			<a class="qf-button qf-button-warn" >Click me</a>
+			<a class="qf-button qf-button-cancel" >Click me</a>
+		</div>
+		
+		<div class="ball"></div>
+		
+		<div id="abc" class="page-modelone">
+			<h1>Hello</h1>
+			<a id="close-btn" class="qf-button" >关闭</a>
+		</div>
+		
+		<script>
+			seajs.config({
+				//设置路径，方便目录调用
+				paths: {
+					"cdn" : "http://cdn.bootcss.com",
+					'components': 'http://localhost:3000/components',
+					'page': 'http://localhost:3000/components/page',
+					'lib': 'http://localhost:3000/components/lib'
+				},
+				
+				//设置别名，方便调用
+				alias: {
+					"jquery" : "cdn/jquery/3.1.1/jquery.js",
+					'button': 'components/button/index',
+					'ball': 'components/ball/index',
+					'model': 'components/model/index'
+				}
+				
+			});
+		</script>
+		
+		<script>
+			/*加载单个模块*/
+			seajs.use("page/js/test");
+			
+		</script>
+	</body>
+</html>

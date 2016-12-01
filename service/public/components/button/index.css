@@ -1,0 +1,29 @@
+/**
+ * 此文件为按钮样式
+ * 
+ */
+
+/*一般样式*/
+.qf-button{
+	width:120px;
+	height:30px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: skyblue;
+	cursor: pointer;
+	border: 2px solid #ccc;
+	
+}
+
+/*警告按钮*/
+.qf-button-warn{
+	background-color: red;
+}
+
+/*取消样式*/
+.qf-button-cancel{
+	background-color: #aaa;
+}

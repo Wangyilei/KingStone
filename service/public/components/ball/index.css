@@ -1,0 +1,6 @@
+.ball {
+	width:30px;
+	height:30px;
+	border-radius: 100%;
+	background: -webkit-radial-gradient(circle closest-side, #ace, #f96 0, #1E90FF 50%, #f96);
+}
